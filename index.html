@@ -12,6 +12,9 @@
     </header>
 
     <section>
+        <div class="recado">
+            <p><strong>Informe o ano de nascimento para descobir a idade!</strong></p>
+          </div>
         <div>
             <p>Ano de Nascimento:
                 <input type="number" name="txtAno" id="txtAno" min="0">
@@ -23,8 +26,9 @@
                 <label for="fem">Feminino</label>
             </p>
             <p>
-                <input type="button" value="Verificar" onclick="verificar()">
-            </p>
+                <a><input type="button" value="Verificar"onclick="verificar()"></a>
+                
+            </p>   
         </div>
         <div id="res">
             Preencha os dados acima Para ver o resultado!
@@ -32,8 +36,16 @@
     </section>
 
     <footer>
+
+        <div class="rounded-social-buttons">
+            <a class="social-button linkedin" href="https://www.linkedin.com/in/fnicom/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="social-button github" href="https://github.com/fnicom" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
         <p>&copy; Francisco Nicomedes Batista</p>
+
     </footer>
    <script src="script.js"></script>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 </body>
 </html>
