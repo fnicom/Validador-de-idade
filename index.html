@@ -8,16 +8,17 @@
 </head>
 <body>
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1>VERIFICADOR DE IDADE</h1>
     </header>
 
-    <section>
+    <!-- <div class="login-box"> -->
+    <section class="login-box">
         <div class="recado">
             <p><strong>Informe o ano de nascimento para descobir a idade!</strong></p>
           </div>
-        <div>
+        <div class="form-input">
             <p>Ano de Nascimento:
-                <input type="number" name="txtAno" id="txtAno" min="0">
+                <input type="number" name="txtAno" id="txtAno" min="0" placeholder="Digite o ano de Nascimento:">
             </p>
             <p>Sexo:
                 <input type="radio" name="radSex" id="mas" checked>
@@ -28,13 +29,18 @@
             <p>
                 <a><input type="button" value="Verificar"onclick="verificar()"></a>
                 
+            </p>
+            <p>
+                <button onclick="limparVerificar()">Limpar</button>
+                
             </p>   
         </div>
         <div id="res">
             Preencha os dados acima Para ver o resultado!
         </div>
     </section>
-
+    <!-- </div> -->
+    
     <footer>
 
         <div class="rounded-social-buttons">
