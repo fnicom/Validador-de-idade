@@ -6,7 +6,7 @@
     <title>Modelo de Exercício</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body onload="droptListSelecionarAno()">
     <header>
         <h1>VERIFICADOR DE IDADE</h1>
     </header>
@@ -18,7 +18,7 @@
           </div>
         <div class="form-input">
             <p>Ano de Nascimento:
-                <input type="number" name="txtAno" id="txtAno" min="0" placeholder="Digite o ano de Nascimento:">
+                <select id="selecionaAno"></select>
             </p>
             <p>Sexo:
                 <input type="radio" name="radSex" id="mas" checked>
@@ -26,14 +26,14 @@
                 <input type="radio" name="radSex" id="fem">
                 <label for="fem">Feminino</label>
             </p>
+           <div class="btn">
             <p>
-                <a><input type="button" value="Verificar"onclick="verificar()"></a>
+                <button class="btn_verificar" type="button" value="Verificar" onclick="verificar()">Verificar</button>
+                <!-- <button type="button" value="Limpar" onclick="limparTela()">Limpar</button> -->
                 
             </p>
-            <p>
-                <button onclick="limparVerificar()">Limpar</button>
-                
-            </p>   
+            </div>
+
         </div>
         <div id="res">
             Preencha os dados acima Para ver o resultado!
